@@ -7,7 +7,10 @@
 <style type="text/css">
 
 	/* respnsive css for tablets*/
-@media all and (max-width: 768px) {
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
   #wrapper {
     margin: auto;
     max-width: 500px !important; 
@@ -22,7 +25,7 @@
   #dycdLogo {
         display: table-header-group !important;
   }
-  #headerMiddle{
+  #headerMiddle {
     display: table-row-group;
     padding-top: 50px;
     position: absolute;
@@ -39,9 +42,13 @@
             height:auto !important;
             width:100% !important;
         }
-
+	}
+	
 /* respnsive css for mobile phones*/
-@media all and (max-width: 640px) {
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
   #wrapper {
     margin: auto;
     max-width: 460px !important; 
