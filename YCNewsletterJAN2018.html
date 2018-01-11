@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NYC DYCD Youth Connect Newsletter</title>
+
+<style type="text/css">
+	
+/* text styles */
+
+body {
+  background: #FF8008;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+background-attachment: fixed;
+  color: #404040;
+  padding: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875em;
+  line-height: 1.35em;
+  text-align: left;
+
+}
+
+a.newsletterLink:link, a.newsletterLink:visited {
+  color: white;
+  text-decoration: none;
+ text-transform: uppercase;
+}
+
+a.newsletterLink:hover, a.newsletterLink:active {
+  color: black;
+}
+
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875em;
+  line-height: 1.35em;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  font-size: 7.8em;
+  line-height: 1em;
+  text-align: left;
+  font-weight: 700;
+  margin: 0px;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 1em;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #39388d;
+}
+
+h3 {
+  text-align: left;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5em;
+  line-height:1.17em;
+  font-weight: 700;
+  margin: 0;
+}
+
+h4,
+h5,
+h6 {
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+a:link, a:visited {
+  color: #39388d;
+}
+a:hover, a:active {
+  color: #f58f2f;   
+}
+
+
+
+.meta{
+  border-top:2px solid #f58f2f;
+  text-align:center;
+  margin: 2em 0 0;
+}
+
+.meta h2{
+  display:inline-block;
+  margin:0;
+  padding:0 20px;
+  background: #f58f2f;
+  position:relative;
+  top:-12px;
+  font-family: sans-serif;
+  font-size:18px;
+  text-transform:uppercase;
+  letter-spacing:3px;
+}
+
+
+/* fixes box sizing with padding */
+div {
+ -webkit-box-sizing: border-box; 
+ -moz-box-sizing: border-box;    
+ box-sizing: border-box;      
+}
+
+/* div styles */
+
+#wrapper {
+  margin: auto;
+  max-width: 800px; 
+  height: 100%;
+  border: 1px;
+box-shadow: 3px 4px 8px #888888;
+    background-color: #f9f7f1;
+}
+
+#google_translate_element {
+  height; 100%;
+  margin: 0;
+  width: 100%;
+  background-color: #39388d; 
+}
+
+/* start dark google translate theme */
+div#google_translate_element div.goog-te-gadget-simple{
+  background-color: #39388d;
+  border-color: #39388d;
+}
+
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span{
+  color: #ccc;
+}
+    
+div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value span:hover{
+  color:#eee;
+}
+/* end dark google translate theme */
+
+
+
+#header {
+  position: relative;
+  padding: 20px;
+  height: 500px;
+  text-align: left;
+  color: white;
+  width:100%;
+background-image: url('./images/YCEBLAST_header.png');
+  background-color: #39388d;
+}
+
+#header hr {
+  border-color: white;
+}
+
+#dycdLogo {
+  position: absolute;
+  top: 20px;
+}
+#socialMedia {
+  text-align: right;
+
+}
+
+
+#leftColumn {
+  padding: 0px 20px 30px 20px;
+  height: 100%;
+  width: 62.5%;
+  float: left;
+}
+
+#rightColumn {
+  padding: 0px 20px 30px 20px;
+  height: 100%;
+  width: 37.5%;
+  float: right;
+  
+}
+
+#footer {
+  background-color: #39388d;
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+  width: 100%;
+  clear: both;
+  color: white;
+}
+#footer a {
+    color: white;
+  } 
+#footer strong {
+  color: #f58f2f;
+}
+
+hr.style1 {
+	border: 0;
+  border-top: 4px solid #000;
+  border-bottom: 1px solid #000;
+  margin-top: 20px;
+  border-color: #f58f2f;
+}
+
+hr.style2 {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #f58f2f inset;
+}
+
+hr.style3 {
+	border: 0;
+  border-top: 1.5px solid #f58f2f;
+  margin-top: 20px;
+}
+
+#instagramFeed a {
+  text-decoration:none;
+}
+#instagramFeed_forceLink {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
+
+grids {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+
+
+/* For bottom call button */
+.btn {
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+.orange {
+  background-color: #e67e22;
+  box-shadow: 0px 5px 0px 0px #CD6509;
+}
+
+.orange:hover {
+  background-color: #FF983C;
+}
+
+
+/* respnsive css for tablets*/
+@media all and (max-width: 768px) {
+  #wrapper {
+    margin: auto;
+    max-width: 500px !important; 
+  }
+  #header { 
+    display: table !important;
+  }
+  #socialMedia {
+    display: table-footer-group !important;
+    text-align: left;
+  }
+  #dycdLogo {
+        display: table-header-group !important;
+  }
+  #headerMiddle{
+    display: table-row-group;
+    padding-top: 50px;
+    position: absolute;
+  }
+  #rightColumn,
+  #leftColumn {
+    display:block !important;
+    width:100% !important;
+  }
+  h1 {
+  font-size: 6em !important; 
+}
+.bodyImage {
+            height:auto !important;
+            width:100% !important;
+        }
+
+/* respnsive css for mobile phones*/
+@media all and (max-width: 640px) {
+  #wrapper {
+    margin: auto;
+    max-width: 460px !important; 
+  }
+  #header { 
+    display: table !important;
+  }
+  #socialMedia {
+    display: table-footer-group !important;
+    text-align: left;
+  }
+  #dycdLogo {
+        display: table-header-group !important;
+  }
+  #headerMiddle{
+    display: table-row-group;
+    padding-top: 50px;
+    position: absolute;
+  }
+  #rightColumn,
+  #leftColumn {
+    display:block !important;
+    width:100% !important;
+  }
+  h1 {
+  font-size: 6em !important; 
+}
+.bodyImage {
+            height:auto !important;
+            width:100% !important;
+        }
+  .fluidGrid {
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr) !important;
+}
+  .fluidGrid img {
+    max-width: 250px !important;
+    height: auto !important;
+  }
+}
+
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Baloo|Roboto+Condensed|Oswald:400,700|Roboto:400,400i,700" rel="stylesheet" type='text/css'>
+
+
+  <body>
+    <p style="text-align: center"><a class="newsletterLink" href="https://www.dropbox.com/s/33g8lvo3dkndfhj/YCNewsletterJAN2018.html?dl=0" target="_blank">View this email in your browser</a></p>
+    <div id="wrapper">
+      <div id="google_translate_element"></div>
+<!-- Content for the header-->
+      <div id="header">
+        <div id="socialMedia">
+          <a href="https://www.facebook.com/nycyouth"><img src="./images/icon_facebook.png" style="max-height: 50px"></a>
+          <a href="https://twitter.com/nycyouth"><img src="./images/icon_twitter.png" style="max-height: 50px"></a>
+          <a href="https://www.instagram.com/nycyouth/"><img src="./images/icon_instagram.png" style="max-height: 50px"></a>
+          <a href="https://www.youtube.com/user/DYCDNYC"><img src="./images/icon_youtube.png" style="max-height: 50px"></a>
+          </div>
+        <div id="dycdLogo">
+             <a href="http://www1.nyc.gov/site/dycd/index.page"><img src="./images/DYCD_WhiteLogo_Horizontal.png" style="max-height: 50px"></a></div>
+        <div id="headerMiddle"> 
+        <hr class="style1">
+        <h3 style="text-transform:uppercase">January 2018</h3>
+        <h1>youth<br>Connect</h1>
+        <h1 style="opacity: 0.5">E-blast</h1>
+              <hr class="style3">
+          </div>
+             </div>
+<!-- left side main content -->
+      <div id="leftColumn">
+       <div> 
+        <hr class="style1">
+         <h2>Ladders for Leaders Applications are now available! 🤑👔</h2>
+          <hr class="style2">
+         <img src="./images/ladders_youth1.jpg" style="max-width:460px" class="bodyImage"/>
+         <p>The NYC Ladders for Leaders Program gives students a unique opportunity to explore their interests and discover new ones through: 
+           <ul><li><strong>Pre-employment Training:</strong> Receive help with r&#233;sum&#233; and cover letter writing, and interviewing skills. Learn essential workplace readiness skills and business etiquette.</li><br><li><strong>Paid Summer Internships:</strong> 💰 Paid internship opportunities available in a variety of industries to accommodate student interests.</li><br><li><strong>Opportunity to join our growing Alumni Network:</strong> Broad network of alumni, post-internship opportunities and networking events open only to past participants of the program.</li></ul>Visit our <a href="http://www1.nyc.gov/site/dycd/connected/yc-newsletter.page" target="_blank">website</a> for more eligibility and program information. </p>
+        <hr class="style1">
+         <h2>Call for Teen Artists! 🎨</h2>
+          <hr class="style2">
+         <img src="./images/SAAM18_artproject.png" style="max-width:460px" class="bodyImage"/>
+         <p><strong>Call for entries!</strong> This April, DYCD will release limited edition t-shirts featuring youth artwork in recognition of Sexual Assault Awareness Month. Teens can submit original artwork by January 26 for the chance to be featured. Possible themes could revolve around issues of consent, respect for each other, or speaking out against sexual violence and harassment. <strong>Learn more</strong> ➡ <a href="http://on.nyc.gov/2COhIyu" target="_blank">on.nyc.gov/2COhIyu</a>.</p>
+        <hr class="style1">
+         <h2>January is National Mentoring Month!</h2>
+          <hr class="style2">
+         <img src="./images/mentor_month.png" style="max-width:460px" class="bodyImage"/>
+        <p>Research has shown that children who are around caring adults have better chances of staying in school, out of gangs and away from drugs. If you&#8217;re interested or thought about signing up, check out some of the below mentoring programs available in New York City. 👇</p>
+        <h3>Mentoring USA</h3><p>
+<strong><a href="http://www.mentoringusa.org/" target="_blank">Mentoring USA&#8217;s</a></strong> mission is to create sustained and supportive mentor relationships for children in need ages 7&#8211;21. The program matches youth across the country with inspirational adult mentors who can guide them in developing better self-esteem, creating healthy relationships, and making positive life choices.</p>
+      <h3>Mentor New York</h3><p>
+<strong><a href="http://www.mentornewyork.org/" target="_blank">Mentor New York</a></strong> fuels quality mentoring relationships that bring a caring adult with children in need through safe, effective mentoring programs throughout New York State.</p>
+      <h3>Big Brothers Big Sisters of New York City</h3><p>
+<strong><a href="http://www.bigsnyc.org/" target="_blank">BBBS of NYC</a></strong> is considered the founding agency of the nation&#8217;s youth mentoring movement. Since 1904, our mission has been to give all children in New York City who face adversity an opportunity to experience a strong, enduring professionally supported one-to-one mentoring relationship with adults that will help change their lives for the better. We partner with families, volunteers, organizations, and the community to inspire positive change in all.</p>
+    <h3>Mentoring Youth in NYC</h3><p>
+<strong><a href="http://communityimpact.columbia.edu/our-programs/mentoring-youth-nyc" target="_blank">Mentoring Youth in NYC (MyNYC)</a></strong> is a mentoring program that works with high school students who will become first generation college students, providing them mentors and resources for the college application process, assistance that would otherwise be unavailable.</p>
+      </div>
+        <div> 
+          <hr class="style1">
+         <h2>Things to do in NYC 📅</h2>
+          <hr class="style2">
+          <grids class="fluidGrid">
+            <div><img src="./images/bricmedia.jpg" style="max-width:200px" class="bodyImage"/><p><strong>BRIC Media Talks: Girls in Gear</strong><br>Thu, Jan 18 | 6:30PM&#8211;8PM | FREE<br><em>Brooklyn, NY</em><br>Where do you normally see women in media? As hosts, producers, maybe administration? Join the The Media Center at BRIC House for Girls in Gear, where you will meet women who work behind the scenes in the technical aspects of media production. Free to attend with <a href="https://www.bricartsmedia.org/events-performances/media-talks-girls-n-gear" target="_blank">RSVP</a>.</p></div>
+           <div><img src="./images/winterjam.jpg" style="max-width:200px" class="bodyImage"/><p><strong>Winter Jam ❄ ❄ ❄</strong><br>Sat, Jan 27 | 11AM&#8211;3PM | FREE<br><em>Central Park, Manhattan</em><br>NYC Parks's annual winter sports festival features fresh-blown snow courtesy of Gore Mountain, so families can try cross-country skiing, sledding, snowshoeing and snowboarding, or just frolic in the fluffy white stuff. Equipment is provided or bring your own. Signed waivers are required for certain activities. Arrive early to beat the crowds, and keep an eye on the weather. It has been canceled in the past for too cold temps. Learn more at <a href="https://www.nycgovparks.org/highlights/festivals/winter-jam" target="_blank">nycgovparks.org</a>.</p></div>
+           <div><img src="./images/tennis.jpg" style="max-width:200px" class="bodyImage"/><p><strong>Community Tennis Program 🎾 </strong><br><em>Various Locations &#38; Dates</em><br>The New York Junior Tennis &#38; Learning organization provides free tennis instruction for youth ages 5-18 from trained coaches in schools and public parks in all 51 New York City council districts year round. Visit their <a href="http://www.nyjtl.org/programs/free-tennis/winter-ctp/" target="_blank">website</a> for locations and info.</p></div>
+              <div><img src="./images/culturalfestival.jpg" style="max-width:200px" class="bodyImage"/><p><strong>New York City Cultural Festival</strong><br>Sun, Jan 28 | 10AM-5PM<br><em>Lower Manhattan</em><br>Join the Children's Museum of the Arts on Sunday, January 28, for a cultural festival celebrating New York City, with workshops and performances inspired by New York artists and the city&#8217;s diverse neighborhoods. The spirit of the legendary Savoy Ballroom will fill the museum with an interactive dance presentation by The Harlem Swing Dance Society between 12-3PM. Their mission is to preserve Harlem&#8217;s history, and cultural identity and provide free drop in classes for the Harlem community. Visit their <a href="http://cmany.org/classes-and-activities/events/new-york-city-cultural-festival/" target="_blank">website</a> for admission information.</p></div>
+        </grids>
+        </div>
+      </div>
+<!--right column-->
+       <div id="rightColumn">
+         
+         <div> 
+          <hr class="style1">
+         <h2>Education Programs 📖</h2>
+          <hr class="style2">
+          <h3>American Museum of Natural History Afterschool Program</h3><p><strong>Applications for session 4 are now open!</strong> Every year, the After School Program (ASP) offers courses to New York City high school students interested in the sciences. There are courses in anthropology, astrophysics, earth science, genetics, biodiversity, and more. <strong>All After School Program Exploratory and Science Research courses are offered free of charge!</strong> Visit their <a href="https://www.amnh.org/learn-teach/grades-9-12/after-school-program" target="_blank">website</a> for application and scheduling info.</p>
+          <h3>Cooper Union Art Pre-College Program Spring 2018 Registration</h3><p>The Cooper Union Art Pre-College Outreach Spring Program is a free program of studio courses, creative writing and art issues seminars for New York City area high school students interested in preparing a portfolio for college. Only High School Sophomores and Juniors are eligible for the Spring 2018 Program. Courses are held Saturdays from 9AM to 5PM Feburary 24&#8211;April 14, 2018. All materials are provided free of cost. <strong>Deadline to <a href="http://cooper.edu/academics/outreach-and-pre-college/outreach" target="_blank">apply</a> is February 10, 2018.</strong></p><br>
+          <h3>Precollege Classes at FIT</h3><p>The Fashion Institute of Technology's Precollege Programs provide middle and high school students with experiential learning opportunities at NYC camps. Precollege Programs prepares students for the FIT admissions process, including creative arts portfolio development, and features the unique experience of being part of FIT's dynamic and diverse college campus. Visit their <a href="http://www.fitnyc.edu/precollege/classes/index.php" target="_blank">website</a> for registration and info on upcoming workshops!</p>
+          <h3>INCLUDEnyc Fair</h3><p>Formerly Summer Fun and More, the INCLUDEnyc Fair is New York City&#8217;s largest annual year-round activities fair for young people with disabilities, where families can meet face-to-face with nearly 100 different summer camps, afterschool, weekend, arts, sports, social, and recreational programs. The Event will be held on Saturday 1/27/2018 at Hotel Pennsylvania. Visit their <a href="http://www.includenyc.org/content/summer-fun-and-more-fair-2017" target="_blank">website</a> for info.</p>
+        </div>
+
+         <div>
+           <hr class="style1">
+         <h2>Internships 💼</h2>
+          <hr class="style2">
+           <h3>Urban Fellows Program</h3><p>The Urban Fellows Program is sponsored by The City of New York and administered by the Department of Citywide Administrative Services (DCAS). The program is designed to introduce America's finest college students and graduates to local government and public service. <strong>Deadline to <a href="http://www.nyc.gov/html/dcas/html/work/urbanfellows.shtml" target="_blank">apply</a> is January 15, 2018.</strong></p>
+          <h3>YCteen Magazine</h3><p>If you're a New York City teen and you like the idea of writing stories that will help your peers, YCteen may be the place for you. YCteen writers get published online and in a print magazine that's distributed to hundreds of high schools, libraries, and community-based organizations in New York City. Most teens on the staff write personal stories about their own lives, and reported stories about issues that affect young people. <strong><a href="http://www.ycteenmag.org/write/ycteen.html" target="_blank">Applications</a> are now available through February 9, 2018.</strong></p>
+          <h3>2018 Bloomberg Internship Program</h3><p>As a summer <a href="https://careers.bloomberg.com/job/detail/62663" target="_blank">Bloomberg intern</a>, you are assigned to a team based on your skills and interests. Throughout the summer, you&#8217;ll gain experiences that will help launch your career. Bloomberg recognizes your individuality and works with you to identify the department that can benefit from your experiences, while helping to develop your professional and leadership skills.</p>
+           <h3>Thurgood Marshall Summer Law Internship Program</h3><p>The Thurgood Marshall Summer Law Internship Program places high-achieving inner-city high school students with legal employers for the summer. This Program is part of the New York City Bar&#8217;s continuing efforts to enhance the diversity of the legal profession. <strong><a href="http://www.nycbar.org/serving-the-community/diversity-and-inclusion/student-pipeline-programs/programs/thurgood-marshall-summer-law-internship" target="_blank">Applications</a> &#38; parental consent forms for summer 2018 are due on February 23, 2018.</strong></p>
+         </div>
+         
+
+         
+         <div id="instagramFeed">
+           <hr class="style1">
+         <h2>Stay Connected 📱</h2>
+          <hr class="style2">
+           <h3 style="font-family:'Baloo', cursive; color: #f58f2f">Follow <a href="https://www.instagram.com/nycyouth/" target="_blank">@NYCYOUTH</a> on Instagram for updates!</h3><br>
+           <!-- start of widget -->
+<div id="instagramFeed">
+<!-- This is the link to Instagram page -->
+<a href="https://instagram.com/nycyouth/">
+<div id="instagramFeed_forceLink"></div>
+<!-- SnapWidget code-->
+<script src="https://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="https://snapwidget.com/embed/491315" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+</a>
+</div>
+<!-- End SnapWidget code -->
+        <br><h3 style="font-family:'Baloo', cursive; color: #f58f2f">Also explore <a href="https://www.instagram.com/explore/tags/nycyouth/" target="_blank">#NYCYOUTH</a> to discover more in NYC.</h3>  
+         </div>
+      </div>
+<!--footer content-->
+       <div id="footer">
+         <div class="meta"><h2>nyc dycd youth connect</h2></div>
+<p>Invite DYCD Youth Connect to attend, present or hand out materials at your event.<br><br><strong>Call Youth Connect toll free:</strong> 1-800-246-4646 <br><strong>Email:</strong> <a href="mailto:YouthConnect@dycd.nyc.gov">YouthConnect@dycd.nyc.gov</a><br><strong>Visit:</strong> <a href="http://www1.nyc.gov/site/dycd/connected/youth-connect.page">www.nyc.gov/dycd</a><br><br>
+  <strong>Copyright &#169; City of New York</strong> | <a href="https://www.nyc.gov/portal/signin.jsp">Unsubscribe to this Newsletter</a></p><a style="line-height: 110%" href="tel:18002464646" class="btn orange">Call Youth Connect Now<br>1-800-246-4646</a>
+      </div>    
+    </div>
+
+<!--google translate script-->
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+  </body>
+
+</html>
