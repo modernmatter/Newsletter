@@ -272,11 +272,8 @@ grids {
   and (min-width: 768px) 
   and (max-width: 1024px) 
   and (-webkit-min-pixel-ratio: 1) {
-	  body {
-	  display: block;
-	  }	  
   #wrapper {
-    margin: auto;
+    margin: auto !important;
     max-width: 600px !important; 
   }
   #header { 
@@ -290,9 +287,9 @@ grids {
         display: table-header-group !important;
   }
   #headerMiddle {
-    display: table-row-group;
-    padding-top: 50px;
-    position: absolute;
+    display: table-row-group !important;
+    padding-top: 50px !important;
+    position: absolute !important;
   }
   #rightColumn,
   #leftColumn {
@@ -314,7 +311,7 @@ grids {
   and (max-width: 568px)
   and (-webkit-min-pixel-ratio: 2) {
   #wrapper {
-    margin: auto;
+    margin: auto !important;
     max-width: 460px !important; 
   }
   #header { 
@@ -322,15 +319,15 @@ grids {
   }
   #socialMedia {
     display: table-footer-group !important;
-    text-align: left;
+    text-align: left !important;
   }
   #dycdLogo {
         display: table-header-group !important;
   }
   #headerMiddle{
-    display: table-row-group;
-    padding-top: 50px;
-    position: absolute;
+    display: table-row-group !important;
+    padding-top: 50px !important;
+    position: absolute !important;
   }
   #rightColumn,
   #leftColumn {
