@@ -5,12 +5,9 @@
 	<title>NYC DYCD Youth Connect Newsletter</title>
 
 <style type="text/css">
-
-
-	
-/* regular desktop styles  */	
 	
 /* text styles */
+
 body {
   background: #FF8008;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to top, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
@@ -61,7 +58,7 @@ h2 {
   margin-top: 5px;
   margin-bottom: 10px;
   color: #39388d;
-	text-align: center;
+  text-align: center;
 }
 
 h3 {
@@ -117,7 +114,7 @@ div {
 /* div styles */
 
 #wrapper {
-  margin: auto;
+  margin: 0 auto;
   max-width: 800px; 
   height: 100%;
   border: 1px;
@@ -268,69 +265,17 @@ grids {
   background-color: #FF983C;
 }
 
-	/* respnsive css for tablets*/
-@media screen 
-  and (min-width: 768px) 
-  and (max-width: 1024px) 
-  and (-webkit-min-pixel-ratio: 1) {
-  #wrapper {
-    margin: auto !important;
-    max-width: 600px !important; 
-  }
-  #header { 
-    display: table !important;
-  }
-  #socialMedia {
-    display: table-footer-group !important;
-    text-align: left !important;
-  }
-  #dycdLogo {
-        display: table-header-group !important;
-  }
-  #headerMiddle {
-    display: table-row-group !important;
-    padding-top: 50px !important;
-    position: absolute !important;
-  }
-  #rightColumn,
-  #leftColumn {
-    display:block !important;
-    width:100% !important;
-  }
-  h1 {
-  font-size: 6em !important; 
-}
-.bodyImage {
-            height:auto !important;
-            width:100% !important;
-        }
-	}
-	
-/* respnsive css for mobile phones*/
+
+
+/* responsive css for mobile phones */
+ 
 @media only screen 
-/*   and (min-width: 320px)  */
-  and (max-width: 568px)
-/*   and (-webkit-min-pixel-ratio: 2)  */
-{
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
   #wrapper {
-    margin: auto !important;
-    max-width: 460px !important; 
-	display: block;  
-  }
-  #header { 
-    display: table !important;
-  }
-  #socialMedia {
-    display: table-footer-group !important;
-    text-align: left !important;
-  }
-  #dycdLogo {
-        display: table-header-group !important;
-  }
-  #headerMiddle{
-    display: table-row-group !important;
-    padding-top: 50px !important;
-    position: absolute !important;
+    margin: auto;
+    max-width: 100% !important; 
   }
   #rightColumn,
   #leftColumn {
@@ -338,21 +283,92 @@ grids {
     width:100% !important;
   }
   h1 {
-  font-size: 6em !important; 
+  font-size: 8em !important; 
 }
 .bodyImage {
-            height:auto !important;
-            width:100% !important;
+            height: auto !important;
+            max-width: 100% !important;
         }
   .fluidGrid {
   display: grid !important;
   grid-template-columns: repeat(1, 1fr) !important;
 }
   .fluidGrid img {
-    max-width: 250px !important;
+    max-width: 100% !important;
     height: auto !important;
   }
 }
+
+
+/* responsive css for tablets */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1000px) 
+  and (-webkit-min-device-pixel-ratio: 1)  {  
+    #wrapper {
+      margin: auto;
+      max-width: 100% !important; 
+    }
+  #rightColumn,
+  #leftColumn {
+      display:block !important;
+      width:100% !important;
+    }
+  h1 {
+      font-size: 8em !important; 
+    }
+.bodyImage {
+            height: auto !important;
+            max-width: 100% !important;
+     }
+  }
+
+
+/* responsive desktop */
+ @media all 
+  and (max-width: 900px) {
+#wrapper {
+    margin: auto;
+    max-width: 100% !important; 
+  }
+  #header { 
+    display: table !important;
+  }
+  #socialMedia {
+    display: table-footer-group !important;
+    text-align: left;
+  }
+  #dycdLogo {
+        display: table-header-group !important;
+  }
+  
+  #headerMiddle{
+    display: table-row-group;
+    padding-top: 50px;
+    position: absolute;
+  }
+  #rightColumn,
+  #leftColumn {
+    display:block !important;
+    width:100% !important;
+  }
+  h1 {
+  font-size: 5.5em !important; 
+}
+.bodyImage {
+            height: auto !important;
+            max-width: 100% !important;
+        }
+  .fluidGrid {
+  display: grid !important;
+  grid-template-columns: repeat(1, 1fr) !important;
+}
+  .fluidGrid img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  }
+
 
 
 </style>
@@ -360,9 +376,12 @@ grids {
 <link href="https://fonts.googleapis.com/css?family=Baloo|Roboto+Condensed|Oswald:400,700|Roboto:400,400i,700" rel="stylesheet" type='text/css'>
 
 </head>
+
   <body>
-    <p style="text-align: center"><a class="newsletterLink" href="https://modernmatter.github.io/Newsletter/YCNewsletterJAN2018.html" target="_blank">View this email in your browser</a></p>
+      <p style="text-align: center"><a class="newsletterLink" href="https://modernmatter.github.io/Newsletter/YCNewsletterJAN2018.html" target="_blank">View this email in your browser</a></p>
+
     <div id="wrapper">
+
       <div id="google_translate_element"></div>
 <!-- Content for the header-->
       <div id="header">
@@ -378,7 +397,7 @@ grids {
         <hr class="style1">
         <h3 style="text-transform:uppercase">January 2018</h3>
         <h1>youth<br>Connect</h1>
-        <h1 style="opacity: 0.5">E-blast</h1>
+        <span class="notranslate"><h1 style="opacity: 0.5">E-blast</h1></span>
               <hr class="style3">
           </div>
              </div>
@@ -386,11 +405,11 @@ grids {
       <div id="leftColumn">
        <div> 
         <hr class="style1">
-         <h2>Ladders for Leaders Applications are now available! 🤑👔</h2>
+         <h2>2018 Ladders for Leaders Applications are now available! 👔</h2>
           <hr class="style2">
          <img src="https://modernmatter.github.io/Newsletter/images/Ladders_youth1.jpg" style="max-width:460px" class="bodyImage"/>
          <p>The NYC Ladders for Leaders Program gives students a unique opportunity to explore their interests and discover new ones through: 
-           <ul><li><strong>Pre-employment Training:</strong> Receive help with r&#233;sum&#233; and cover letter writing, and interviewing skills. Learn essential workplace readiness skills and business etiquette.</li><br><li><strong>Paid Summer Internships:</strong> 💰 Paid internship opportunities available in a variety of industries to accommodate student interests.</li><br><li><strong>Opportunity to join our growing Alumni Network:</strong> Broad network of alumni, post-internship opportunities and networking events open only to past participants of the program.</li></ul>Visit our <a href="http://www1.nyc.gov/site/dycd/connected/yc-newsletter.page" target="_blank">website</a> for more eligibility and program information. </p>
+           <ul><li><strong>Pre-employment Training:</strong> Receive help with r&#233;sum&#233; and cover letter writing, and interviewing skills. Learn essential workplace readiness skills and business etiquette.</li><br><li><strong>Paid Summer Internships:</strong> 💰 Paid internship opportunities available in a variety of industries to accommodate student interests.</li><br><li><strong>Opportunity to join our growing Alumni Network:</strong> Broad network of alumni, post-internship opportunities and networking events open only to past participants of the program.</li></ul>Visit our <a href="http://www1.nyc.gov/site/dycd/services/jobs-internships/nyc-ladders-for-leaders.page" target="_blank">website</a> for more eligibility and program information. </p>
         <hr class="style1">
          <h2>Call for Teen Artists! 🎨</h2>
           <hr class="style2">
@@ -418,7 +437,9 @@ grids {
             <div><img src="https://modernmatter.github.io/Newsletter/images/bricmedia.jpg" style="max-width:200px" class="bodyImage"/><p><strong>BRIC Media Talks: Girls in Gear</strong><br>Thu, Jan 18 | 6:30PM&#8211;8PM | FREE<br><em>Brooklyn, NY</em><br>Where do you normally see women in media? As hosts, producers, maybe administration? Join the The Media Center at BRIC House for Girls in Gear, where you will meet women who work behind the scenes in the technical aspects of media production. Free to attend with <a href="https://www.bricartsmedia.org/events-performances/media-talks-girls-n-gear" target="_blank">RSVP</a>.</p></div>
            <div><img src="https://modernmatter.github.io/Newsletter/images/winterjam.jpg" style="max-width:200px" class="bodyImage"/><p><strong>Winter Jam ❄ ❄ ❄</strong><br>Sat, Jan 27 | 11AM&#8211;3PM | FREE<br><em>Central Park, Manhattan</em><br>NYC Parks's annual winter sports festival features fresh-blown snow courtesy of Gore Mountain, so families can try cross-country skiing, sledding, snowshoeing and snowboarding, or just frolic in the fluffy white stuff. Equipment is provided or bring your own. Signed waivers are required for certain activities. Arrive early to beat the crowds, and keep an eye on the weather. It has been canceled in the past for too cold temps. Learn more at <a href="https://www.nycgovparks.org/highlights/festivals/winter-jam" target="_blank">nycgovparks.org</a>.</p></div>
            <div><img src="https://modernmatter.github.io/Newsletter/images/tennis.jpg" style="max-width:200px" class="bodyImage"/><p><strong>Community Tennis Program 🎾 </strong><br><em>Various Locations &#38; Dates</em><br>The New York Junior Tennis &#38; Learning organization provides free tennis instruction for youth ages 5-18 from trained coaches in schools and public parks in all 51 New York City council districts year round. Visit their <a href="http://www.nyjtl.org/programs/free-tennis/winter-ctp/" target="_blank">website</a> for locations and info.</p></div>
-              <div><img src="https://modernmatter.github.io/Newsletter/images/culturalfestival.jpg" style="max-width:200px" class="bodyImage"/><p><strong>New York City Cultural Festival</strong><br>Sun, Jan 28 | 10AM-5PM<br><em>Lower Manhattan</em><br>Join the Children's Museum of the Arts on Sunday, January 28, for a cultural festival celebrating New York City, with workshops and performances inspired by New York artists and the city&#8217;s diverse neighborhoods. The spirit of the legendary Savoy Ballroom will fill the museum with an interactive dance presentation by The Harlem Swing Dance Society between 12-3PM. Their mission is to preserve Harlem&#8217;s history, and cultural identity and provide free drop in classes for the Harlem community. Visit their <a href="http://cmany.org/classes-and-activities/events/new-york-city-cultural-festival/" target="_blank">website</a> for admission information.</p></div>
+            <div><img src="https://modernmatter.github.io/Newsletter/images/culturalfestival.jpg" style="max-width:200px" class="bodyImage"/><p><strong>INCLUDEnyc Fair</strong><br>Sat, Jan 27 | 10AM&#8211;3PM | FREE<br><em>Manhattan, NY</em><br>Formerly Summer Fun and More, the INCLUDEnyc Fair is New York City&#8217;s largest annual year-round activities fair for young people with disabilities, where families can meet face-to-face with nearly 100 different summer camps, afterschool, weekend, arts, sports, social, and recreational programs. The Event will be held on Saturday 1/27/2018 at Hotel Pennsylvania. Visit their <a href="http://www.includenyc.org/content/summer-fun-and-more-fair-2017" target="_blank">website</a> for info.</p></div>
+            <div><img src="https://modernmatter.github.io/Newsletter/images/culturalfestival.jpg" style="max-width:200px" class="bodyImage"/><p><strong>New York City Cultural Festival</strong><br>Sun, Jan 28 | 10AM&#8211;5PM<br><em>Lower Manhattan</em><br>Join the Children's Museum of the Arts on Sunday, January 28, for a cultural festival celebrating New York City, with workshops and performances inspired by New York artists and the city&#8217;s diverse neighborhoods. The spirit of the legendary Savoy Ballroom will fill the museum with an interactive dance presentation by The Harlem Swing Dance Society between 12-3PM. Their mission is to preserve Harlem&#8217;s history, and cultural identity and provide free drop in classes for the Harlem community. Visit their <a href="http://cmany.org/classes-and-activities/events/new-york-city-cultural-festival/" target="_blank">website</a> for admission information.</p></div>
+              
         </grids>
         </div>
       </div>
@@ -432,14 +453,12 @@ grids {
           <h3>American Museum of Natural History Afterschool Program</h3><p><strong>Applications for session 4 are now open!</strong> Every year, the After School Program (ASP) offers courses to New York City high school students interested in the sciences. There are courses in anthropology, astrophysics, earth science, genetics, biodiversity, and more. <strong>All After School Program Exploratory and Science Research courses are offered free of charge!</strong> Visit their <a href="https://www.amnh.org/learn-teach/grades-9-12/after-school-program" target="_blank">website</a> for application and scheduling info.</p>
           <h3>Cooper Union Art Pre-College Program Spring 2018 Registration</h3><p>The Cooper Union Art Pre-College Outreach Spring Program is a free program of studio courses, creative writing and art issues seminars for New York City area high school students interested in preparing a portfolio for college. Only High School Sophomores and Juniors are eligible for the Spring 2018 Program. Courses are held Saturdays from 9AM to 5PM Feburary 24&#8211;April 14, 2018. All materials are provided free of cost. <strong>Deadline to <a href="http://cooper.edu/academics/outreach-and-pre-college/outreach" target="_blank">apply</a> is February 10, 2018.</strong></p><br>
           <h3>Precollege Classes at FIT</h3><p>The Fashion Institute of Technology's Precollege Programs provide middle and high school students with experiential learning opportunities at NYC camps. Precollege Programs prepares students for the FIT admissions process, including creative arts portfolio development, and features the unique experience of being part of FIT's dynamic and diverse college campus. Visit their <a href="http://www.fitnyc.edu/precollege/classes/index.php" target="_blank">website</a> for registration and info on upcoming workshops!</p>
-          <h3>INCLUDEnyc Fair</h3><p>Formerly Summer Fun and More, the INCLUDEnyc Fair is New York City&#8217;s largest annual year-round activities fair for young people with disabilities, where families can meet face-to-face with nearly 100 different summer camps, afterschool, weekend, arts, sports, social, and recreational programs. The Event will be held on Saturday 1/27/2018 at Hotel Pennsylvania. Visit their <a href="http://www.includenyc.org/content/summer-fun-and-more-fair-2017" target="_blank">website</a> for info.</p>
         </div>
 
          <div>
            <hr class="style1">
          <h2>Internships 💼</h2>
           <hr class="style2">
-           <h3>Urban Fellows Program</h3><p>The Urban Fellows Program is sponsored by The City of New York and administered by the Department of Citywide Administrative Services (DCAS). The program is designed to introduce America's finest college students and graduates to local government and public service. <strong>Deadline to <a href="http://www.nyc.gov/html/dcas/html/work/urbanfellows.shtml" target="_blank">apply</a> is January 15, 2018.</strong></p>
           <h3>YCteen Magazine</h3><p>If you're a New York City teen and you like the idea of writing stories that will help your peers, YCteen may be the place for you. YCteen writers get published online and in a print magazine that's distributed to hundreds of high schools, libraries, and community-based organizations in New York City. Most teens on the staff write personal stories about their own lives, and reported stories about issues that affect young people. <strong><a href="http://www.ycteenmag.org/write/ycteen.html" target="_blank">Applications</a> are now available through February 9, 2018.</strong></p>
           <h3>2018 Bloomberg Internship Program</h3><p>As a summer <a href="https://careers.bloomberg.com/job/detail/62663" target="_blank">Bloomberg intern</a>, you are assigned to a team based on your skills and interests. Throughout the summer, you&#8217;ll gain experiences that will help launch your career. Bloomberg recognizes your individuality and works with you to identify the department that can benefit from your experiences, while helping to develop your professional and leadership skills.</p>
            <h3>Thurgood Marshall Summer Law Internship Program</h3><p>The Thurgood Marshall Summer Law Internship Program places high-achieving inner-city high school students with legal employers for the summer. This Program is part of the New York City Bar&#8217;s continuing efforts to enhance the diversity of the legal profession. <strong><a href="http://www.nycbar.org/serving-the-community/diversity-and-inclusion/student-pipeline-programs/programs/thurgood-marshall-summer-law-internship" target="_blank">Applications</a> &#38; parental consent forms for summer 2018 are due on February 23, 2018.</strong></p>
@@ -474,10 +493,9 @@ grids {
       </div>    
     </div>
 
-<!--google translate script-->
 <script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,bn,zh-CN,zh-TW,fi,ht,ko,ru,es,ur', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
 }
 </script>
 <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
